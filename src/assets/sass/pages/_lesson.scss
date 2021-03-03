@@ -1,0 +1,14 @@
+.lesson {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: $body-height;
+    margin: 10vh;
+}
+
+.side-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75%;
+}

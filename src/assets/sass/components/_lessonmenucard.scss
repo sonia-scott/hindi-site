@@ -1,0 +1,26 @@
+.lesson-menu-card {
+    width: 10vw;
+    height: 9vh;
+    margin: 10px;
+    padding: 18px;
+    // border-radius: 10px;
+    background-color: $card-color-light;
+    border-bottom: 2px solid transparent;
+
+    color: $text-color;
+    font-family: 'RobotoThin';
+    font-weight: bolder;
+    font-size: 24px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: left;
+
+    &:hover {
+        background-color: white;
+        border-radius: 0;
+        border-bottom: 2px solid $text-color;
+
+    }
+}

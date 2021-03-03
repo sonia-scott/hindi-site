@@ -1,0 +1,26 @@
+
+// abstracts
+@import
+  'abstracts/_variables.scss';
+
+// base
+@import 
+  'base/_base.scss',
+  'base/_fonts.scss';
+
+// components
+@import 
+  'components/_header.scss',
+  'components/_nav.scss',
+  'components/_card.scss',
+  'components/_references.scss',
+  'components/_sidebutton.scss',
+  'components/_unitmenu.scss',
+  'components/_lessonmenucard.scss';
+  
+
+// pages 
+@import 
+  'pages/_home.scss',
+  'pages/_all-lessons.scss',
+  'pages/_lesson.scss';

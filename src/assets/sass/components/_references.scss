@@ -1,0 +1,17 @@
+.references {
+    margin: 10px;
+    line-height: 30px;
+}
+
+.reference {
+    .ref {
+        padding: 3px;
+    }
+    .author {
+        font-weight: bolder;
+    }
+
+    .source {
+        font-style: italic;
+    }
+}

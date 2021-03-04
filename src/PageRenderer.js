@@ -1,16 +1,6 @@
 import React from 'react';
 import { useRouteMatch } from 'react-router-dom';
 
-const getPage = page => {
-    const component = () => require(`./pages/${ page }`).default;
-
-    try {
-        return React.createElement(component());
-    } catch (err) {
-        return React.createElement(() => 404); 
-    }
-}
-
 const lessonsList = {
     'letters-and-sounds': {
         title: 'Letters & Sounds',
@@ -61,9 +51,20 @@ const lessonsList = {
     }
 };
 
+
+
+const getPage = page  => {
+    const component = () => require(`./pages/${ page }`).default;
+
+    try {
+        return React.createElement(component());
+    } catch (err) {
+        return React.createElement(() => 404); 
+    }
+}
+
+
 const getLesson = lesson => {
-    console.log('target', lesson);
-    console.log('obj', lessonsList[lesson]);
     const component = () => require(`./pages/lesson`).default;
     try {
         return React.createElement(component(), lessonsList[lesson]);
@@ -72,11 +73,14 @@ const getLesson = lesson => {
     }
 }
 
+
+
 function PageRenderer() {
 
     const {
         params: { page, lesson }
     } = useRouteMatch();
+
 
     if (page) {
         return getPage(page);

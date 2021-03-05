@@ -10,13 +10,43 @@ function Resources(props) {
     function getResources() {
         const resourcesList = [
             {
-                title: 'vocabulary'
+                title: 'vocabulary', 
+                body: [
+                    {
+                        title: 'Google Doc',
+                        body: "The course's weekly vocabulary lists, compiled into one Google Doc.",
+                        link: "https://www.ecosia.org/search?q=chickens",
+                    }, {
+                        title: "Mochi.cards",
+                        body: "A tool for practicing vocabulary sets. Mochi's algorithm employs the idea of spaced repetition, which has been shown to improve recall." ,
+                        link: "https://www.ecosia.org/search?q=chickens",
+                    }, {
+                        title: "vocab application practice",
+                        body: "Practice applying vocabulary words by responding to prompts, in writing or verbally -- up to you.",
+                        link: "https://www.ecosia.org/search?q=chickens",
+                    }
+                ]
             }, {
-                title: 'grammar'
+                title: 'grammar',
+                body: [
+                    {
+                        title: 'Hindi: An Essential Grammar',
+                        body: "Rama Kant Agnihotri, 2009", 
+                        link: "https://www.ecosia.org/search?q=chickens",
+                    }
+                ]
             }, {
-                title: 'reading comprehension'
+                title: 'reading comprehension',
+                body: []
             }, {
-                title: 'listening comprehension'
+                title: 'listening comprehension',
+                body: []
+            }, {
+                title: 'conversations practice',
+                body: []
+            }, {
+                title: 'movies & music',
+                body: []
             }
         ];
         setResources(resourcesList);
@@ -29,8 +59,9 @@ function Resources(props) {
         type: 'resources'
     }
 
+    console.log('card content: ', {cardContent});
 
-    console.log("resources props: ", props);
+
     return (
         <section className="resources">
             <Card type="resources" content={ cardContent }/>

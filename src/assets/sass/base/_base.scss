@@ -7,8 +7,18 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: $text-color;
-    overflow: hidden;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+    
   
 code {
 font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -19,12 +29,16 @@ h1 {
     font-family: $title-font-family;
     font-weight: bold;
     font-size: 64px;
+    text-shadow: -4px 4px $text-color-transparent;
+
 }
 
 h2 {
     font-family: $title-font-family;
     font-weight: normal;
     font-size: 42px; 
+    // text-shadow: -4px 4px $text-color-transparent;
+
 }
 
 h3 {

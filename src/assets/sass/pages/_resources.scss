@@ -2,7 +2,65 @@
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    height: $body-height;
-    margin: 10vh;
+    margin: 5%;
 }
+
+.resource-section {
+    width: 90%;
+}
+
+.resource-section-title {
+    width: max-content;
+    margin: 15px 0;
+    background-color: $card-color;
+    padding: 10px;
+    border-bottom: 1px solid transparent;
+
+    &.open {
+        width: auto;
+        border-bottom: 1px solid $text-color;
+    }
+
+    &:hover {
+        cursor: pointer;
+        border-bottom: 1px solid $text-color;
+    }
+}
+
+
+.resource{
+    margin: 30px 20px;
+
+    .resource-title {
+        text-transform: uppercase;
+        background-color: white;
+        font-family: 'RobotoRegular';
+        font-size: 0.83em;
+        font-weight: bold;
+        border: 2px solid $text-color;
+        width: max-content;
+        padding: 5px 10px;
+        margin: 5px;
+    }
+    
+    .resource-description{
+        display: flex;
+        margin: 15px;
+        margin-top: 10px;
+
+        .arrow-img {
+            width: 25px;
+            height: 25px;
+            margin-left: 10px;
+        }
+
+        .descr-text {
+            margin: 10px;
+            width: fit-content;
+        }
+    }
+}
+
+
+
 

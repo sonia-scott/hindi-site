@@ -1,11 +1,29 @@
 .home {
     display: flex;
+    flex-direction: column;
+}
+
+.home-top {
+    display: flex;
+}
+
+.home-bottom {
+    display: flex;
+    justify-content: flex-end;
+    .sub-title {
+        font-family: $text-font-family;
+        font-weight: bold;
+        font-style: italic;
+        position: absolute;
+        bottom: 40px;
+        margin-right: 50px;
+    }
 }
 
 
 .home-left {
     background-color: $main-color-light;
-    height: 100vh;
+    height: $body-height;
     width: 50vw;
     display: flex;
     justify-content: flex-end;
@@ -18,20 +36,11 @@
         margin: 20px;
         margin-bottom: 175px;
     }
-
-    .sub-title {
-        position: absolute;
-        margin: 100px;
-        font-family: $text-font-family;
-        font-weight: bold;
-        bottom: 0;
-        
-    }
 }
 
 .home-right {
     background-color: $main-color;
-    height: 100vh;
+    height: $body-height;
     width: 50vw;
     display: flex;
     justify-content: flex-start;
@@ -42,29 +51,7 @@
         width: 100px;
         margin: 20px;
         margin-top: 175px;
+
     }
 }
 
-
-
-
-
-// .home-titles {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: space-between;
-//     justify-content: center;
-//     height: $body-height - 10vh;
-//     margin: 15vh 5vw;
-// }
-
-// .main-title {
-//     font-family: $title-font-family;
-//     font-size: 86px;
-//     margin: 0;
-// }
-
-// .sub-title {
-//     text-align: left;
-//     font-family: 'RobotoThin';
-// }
